@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGIS Fasilitas Umum di Kabupaten Pringsewu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Sebaran Fasilitas Umum di Kabupaten Pringsewu</h1>
+    </header>
+    <div id="map"></div>
+    <section id="deskripsi">
+        <p><strong>Deskripsi:</strong><br>
+        WebGIS ini menampilkan peta interaktif persebaran fasilitas umum di Kabupaten Pringsewu, Provinsi Lampung. Peta ini memuat berbagai kategori fasilitas seperti sekolah, rumah sakit, SPBU, terminal bus, kantor pos, sarana ibadah, area olahraga, dan batas administrasi kabupaten. Data bersumber dari olahan shapefile (SHP) yang dikonversi ke format GeoJSON menggunakan QGIS.</p>
+
+        <p>Menurut <strong>BPS Kabupaten Pringsewu (2023)</strong>, wilayah ini memiliki 9 kecamatan dengan beragam fasilitas pelayanan masyarakat. Visualisasi spasial ini bertujuan membantu pengguna dalam memahami distribusi dan kemudahan akses terhadap fasilitas tersebut.</p>
+    </section>
+    <section id="keterangan">
+        <strong>Keterangan:</strong>
+        <ul>
+            <li><span style="color:#f6e21d">&#9679;</span> Sekolah</li>
+            <li><span style="color:#4caf50">&#9679;</span> Rumah Sakit</li>
+            <li><span style="color:#c62828">&#9679;</span> SPBU</li>
+            <li><span style="color:#0d47a1">&#9679;</span> Terminal Bus</li>
+            <li><span style="color:#00bcd4">&#9679;</span> Sarana Ibadah</li>
+            <li><span style="color:#9c27b0">&#9679;</span> Area Olahraga</li>
+            <li><span style="color:#f57c00">&#9679;</span> Kantor Pos</li>
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
